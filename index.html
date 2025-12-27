@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ဘုရားကျမ်းပိုဒ်</title>
+</head>
+
+<body>
+
+<button onclick="show(1)">၁</button>
+<button onclick="show(2)">၂</button>
+<button onclick="show(3)">၃</button>
+
+<p id="text"></p>
+
+<script>
+function show(no){
+  const dhamma = {
+    1: "မကောင်းမှု မလုပ်၊ ကောင်းမှု ပြု၊ စိတ်ကို သန့်ရှင်းစေ",
+    2: "အပျင်းမရှိသူသည် မသေရာကို ရောက်၏",
+    3: "သူတစ်ပါးကို မနာကျင်စေသူသည် ငြိမ်းချမ်း၏"
+  };
+  document.getElementById("text").innerText = dhamma[no];
+}
+</script>
+
+</body>
+</html>
